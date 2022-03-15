@@ -25,7 +25,7 @@ function Nav(){
                   Models
                 </a>
               </li>
-              <li className="nav-menu-item">
+              <li className="nav-menu-item play">
                 <a href="#" className="nav-menu-link nav-link">
                   Play
                 </a>
