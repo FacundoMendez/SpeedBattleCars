@@ -1,6 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
+import imgCoin from "./img/coin.png"
 
 function Nav(){
     return (
@@ -26,11 +27,20 @@ function Nav(){
                   Models
                 </a>
               </li>
-              <li className="nav-menu-item play">
+              <li className="nav-menu-item">
+                <a href="#" className="nav-menu-link nav-link">
+                  User
+                </a>
+              </li>
+              <li className="nav-menu-item coin" >
+                  <img src={imgCoin} alt="coin" />
+                  <div className='contadorCoin'>1000</div>
+              </li>
+          {/*     <li className="nav-menu-item play">
                 <a href="#" className="nav-menu-link nav-link">
                   Play
                 </a>
-              </li>
+              </li> */}
             </ul>
           </div>
         </nav>
