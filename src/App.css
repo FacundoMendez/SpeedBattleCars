@@ -168,10 +168,13 @@ main{
 .coin{
   padding-left: 1.5rem;
 }
+.coin{
+  filter:brightness(200%) contrast(150%);
+}
 
 .coin img{
   width: 51px;
-  filter: drop-shadow(0 -.5px 10px rgb(0, 132, 255));
+  filter: drop-shadow(0 -.5px 8px rgb(0, 26, 255));
 }
 
 .contadorCoin{

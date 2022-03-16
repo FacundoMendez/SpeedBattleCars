@@ -14,19 +14,18 @@ function App() {
       <main className='main'>
         <div className='container'>
           <div className='containerVideo' >
-            <video  autoPlay loop muted  >
+            <video  autoPlay loop muted >
               <source src = {videoBanner} type="video/mp4"></source>
             </video>
             <Logo text="Speed Battle Cars" />
           </div>  
         </div>
-        <div className='container2'></div>
+        <div className='container2'>
+        </div>
       </main>
     
     
     </div>
- 
-    
   );
 }
 
