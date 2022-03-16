@@ -6,16 +6,14 @@ import imgCoin from "./img/coin.png"
 function Nav(){
     return (
       <header className="header">
+        <div className='logoOculto'>
+          <p>Speed Battle Cars</p>
+        </div>
         <nav className="nav">
           <div className="nav__img">
             <button className="nav-toggle" aria-label="Abrir menú">
               <FontAwesomeIcon icon = {faBars} />
             </button>
-            <div className="nav-menu-item logo">
-              <a href="#" className="nav-menu-link nav-link">
-                BattleSpeedCars
-              </a>
-            </div>
             <ul className="navVisible nav-menu">
               <li className="nav-menu-item">
                 <a href="#" className="nav-menu-link nav-link">
@@ -32,15 +30,15 @@ function Nav(){
                   User
                 </a>
               </li>
-              <li className="nav-menu-item coin" >
-                  <img src={imgCoin} alt="coin" />
+              <li className="nav-menu-item nav2" >
+                  <div className='coin'>
+                    <img src={imgCoin} alt="coin" />
+                  </div>
                   <div className='contadorCoin'>1000</div>
+                  <div className='play'>
+                    <a href="#" className="nav-menu-link  nav-link"> Play </a>
+                  </div>
               </li>
-          {/*     <li className="nav-menu-item play">
-                <a href="#" className="nav-menu-link nav-link">
-                  Play
-                </a>
-              </li> */}
             </ul>
           </div>
         </nav>

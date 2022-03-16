@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import $ from "jquery"
 
 
 ReactDOM.render(
@@ -12,3 +13,20 @@ ReactDOM.render(
 
 
 reportWebVitals();
+
+(() =>{
+
+  $(window).scroll(function(){
+          var windowHeight = $(window).scrollTop();
+          var contenido2 = $(".container2").offset();
+          contenido2 = contenido2.top;
+          if(windowHeight >= contenido2  ){
+              $(".logoOculto").show(500);
+              $(".logoOculto").css("opacity", "1");
+          }else{
+            $(".logoOculto").hide(500)
+            $(".logoOculto").css("opacity", "0");
+          }
+  });
+
+})();
