@@ -21,10 +21,10 @@ reportWebVitals();
           var contenido2 = $(".container2").offset();
           contenido2 = contenido2.top;
           if(windowHeight >= contenido2  ){
-              $(".logoOculto").show(200);
+              $(".logoOculto").show(0);
               $(".logoOculto").css("opacity", "1");
           }else{
-            $(".logoOculto").hide(200)
+            $(".logoOculto").hide(0)
             $(".logoOculto").css("opacity", "0");
           }
   });

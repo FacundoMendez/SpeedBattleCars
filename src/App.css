@@ -61,8 +61,9 @@ header{
 
 .logoOculto{
   position: fixed;
-  width: 100%;
   text-align: center;
+  left: 50%;
+  transform: translate(-50%);
   top: 2rem;
   color: white;
   font-size: 3rem;
@@ -70,6 +71,7 @@ header{
   font-family: "sbc";
   display:none;
   transition: all 1s ease-in-out;
+  filter: drop-shadow(0 0 2px rgb(2, 2, 172));
 }
 
 .nav-link {
@@ -85,7 +87,7 @@ header{
   display: flex;
   justify-content: flex-start;
   align-items:stretch;
-  left: 8.5%;
+  left: 8%;
   list-style: none;
   position: absolute;
   width: 100%;
@@ -173,7 +175,7 @@ main{
 }
 
 .coin img{
-  width: 51px;
+  width: 50px;
   filter: drop-shadow(0 -.5px 8px rgb(0, 26, 255));
 }
 
