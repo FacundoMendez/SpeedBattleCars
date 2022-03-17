@@ -2,7 +2,12 @@ import React from 'react';
 import Nav from './components/nav/Nav.jsx';
 import './App.css';
 import videoBanner from './img/banner.mp4';
+import CarPrint from './components/cars/CarPrint.jsx';
 import Logo from "./components/logo/Logo.jsx"
+import models from './components/cars/Cars.jsx';
+
+console.log(...models)
+
 
 function App() {
   return (
@@ -20,8 +25,14 @@ function App() {
             <Logo text="Speed Battle Cars" />
           </div>  
         </div>
-        <div className='container2'>
-        </div>
+        <div className='container2'/>
+    
+        <div className='container3'>
+            <div className='cardImg'>
+              {/*  <CarPrint/> */}
+            </div>
+        </div>  
+
       </main>
     
     
