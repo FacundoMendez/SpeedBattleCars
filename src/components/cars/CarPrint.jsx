@@ -7,6 +7,7 @@ function CarPrint(props){
             <h3>color: {props.color}</h3>
             <h4>Velocidad: {props.velocidad}</h4>
             <h4>Drift: {props.drift}</h4>
+            <img src={props.img} alt="Aston" /> 
         </div>
     )
 }

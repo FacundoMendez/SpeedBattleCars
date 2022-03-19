@@ -34,6 +34,7 @@ function App() {
                   color= {models[0].color}
                   velocidad= {models[0].velocidad}
                   drift= {models[0].drift}
+                  img={models[5].img}
                />
             </div>
         </div>  
