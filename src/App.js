@@ -1,10 +1,12 @@
 import React from 'react';
 import Nav from './components/nav/Nav.jsx';
 import './App.css';
-import videoBanner from './img/banner.mp4';
 import CarPrint from './components/cars/CarPrint.jsx';
-import Logo from "./components/logo/Logo.jsx"
+import Logo from "./components/logo/Logo.jsx";
+import Video from './components/nav/Video.jsx';
 import models from './components/cars/Cars.jsx';
+
+
 
 console.log(...models)
 
@@ -19,9 +21,7 @@ function App() {
       <main className='main'>
         <div className='container'>
           <div className='containerVideo' >
-            <video  autoPlay loop muted >
-              <source src = {videoBanner} type="video/mp4"></source>
-            </video>
+            <Video/>
             <Logo text="Speed Battle Cars" />
           </div>  
         </div>
@@ -29,7 +29,12 @@ function App() {
     
         <div className='container3'>
             <div className='cardImg'>
-              {/*  <CarPrint/> */}
+               <CarPrint 
+                  nombre= {models[0].nombre}
+                  color= {models[0].color}
+                  velocidad= {models[0].velocidad}
+                  drift= {models[0].drift}
+               />
             </div>
         </div>  
 

@@ -35,19 +35,3 @@ models.push(new Car(8, "Senna", "black", 55 , 35 , 10 ));
 export default models;
 
 
-/* 
-
-function CardsImg(){
-    <div className='container3Img'>
-        <img className='aston' src={aston} alt="card aston"></img>
-        <img className='audiR8' src={audiR8} alt="card audiR8"></img>
-        <img className='camaro' src={camaro}alt="card camaro"></img>
-        <img className='ferrari' src={ferrari} alt="card ferrari"></img>
-        <img className='lykan' src={lykan} alt="card lykan"></img>
-        <img className='mercedesAmg' src={mercedesAmg} alt="card mercedesAmg"></img>
-        <img className='porscheGt4' src={porscheGt4} alt="card porscheGt4"></img>
-        <img className='senna' src={senna} alt="card senna"></img>
-    </div>
-}
-
-export default CardsImg */
