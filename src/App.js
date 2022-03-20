@@ -29,8 +29,8 @@ function App() {
         <div className='container2'/>
     
         <div className='container3'>
-            <CarsVisual />
-            <CuadrosCars />
+            <CarsVisual /> {/* muestra el auto de portada */}
+            <CuadrosCars /> {/* muestra los buttons */}
         </div>  
 
       </main>
