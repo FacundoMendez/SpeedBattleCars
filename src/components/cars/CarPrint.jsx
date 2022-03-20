@@ -1,16 +1,71 @@
-import React from 'react';
+import React,{useState} from 'react';
+import aston from "./carsImg/aston.png"
+import audiR8 from "./carsImg/audir8.png"
+import camaro from "./carsImg/camaro.png"
+import ferrari from "./carsImg/ferrari.png"
+import lykan from "./carsImg/Lykan.png"
+import mercedesAmg from "./carsImg/mercedesAMG2.png"
+import porscheGt4 from "./carsImg/PorscheGT4.png"
+import senna from "./carsImg/senna.png" 
 
-function CarPrint(props){
+
+function UpdateImg(props){
+    console.log(props.name)
     return(
-        <div className='name'>
-            <h3>nombre: {props.nombre}</h3>
-            <h3>color: {props.color}</h3>
-            <h4>Velocidad: {props.velocidad}</h4>
-            <h4>Drift: {props.drift}</h4>
-            <img src={props.img} alt="Aston" /> 
+        <img className={props.name} src={props.img} alt={props.name} /> 
+    )
+}
+
+
+
+const CarsVisual = (props) =>{
+    /* console.log(cars.id) */
+    return(
+        <div className='carImg'>
+            <img src={senna} alt="senna" />
+        </div>
+
+    )
+}
+
+
+
+function CuadrosCars(){
+    return(
+        <div className="cuadros">
+            <div id='1' className="astonButton cuadroCar" onClick={CarsVisual}></div>
+
+            <div id='2' className="AudiR8Button cuadroCar"onClick={() => {
+                <UpdateImg name={audiR8}/>
+            }}></div>
+
+            <div id='3' className="CamaroButton cuadroCar"onClick={() => {
+                <UpdateImg name={camaro}/>
+            }}></div>
+
+            <div id='4' className="FerrariButton cuadroCar"onClick={() => {
+               <UpdateImg name={ferrari}/>
+            }}></div>
+
+            <div id='5' className="LykanButton cuadroCar"onClick={() => {
+                <UpdateImg name={lykan}/>
+            }}></div>
+
+            <div id='6' className="MercedesAmgButton cuadroCar"onClick={() => {
+               <UpdateImg name={mercedesAmg}/>
+            }}></div>
+
+            <div id='7' className="PorscheGt4Button cuadroCar"onClick={() => {
+              <UpdateImg name={porscheGt4}/>
+            }}></div>
+
+            <div id='8' className="SennaButton cuadroCar"onClick={() => {
+                <UpdateImg name={senna}/>
+            }}></div>
+
         </div>
     )
 }
 
-export default CarPrint;
 
+export { CuadrosCars,CarsVisual}

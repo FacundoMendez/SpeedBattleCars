@@ -230,16 +230,133 @@ main{
 /* container 3 */
 
 .container3{
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background-color: rgb(1, 1, 1);
+  background-image: url("./img/spot.PNG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+
 }
-.name{
-  color: white;
-  font-size: 5rem;
+
+.carImg {
+  position: absolute;
   width: 100%;
+  top: 14rem;
+  left: 50%;
+  transform: translate(-50%);
   text-align: center;
 }
+
+.carImg img{
+  width: 45%;
+  object-fit: cover;
+  filter: drop-shadow(15px 30px 18px rgb(8, 8, 8)) contrast(110%) brightness(110%);
+}
+
+
+.cuadros{
+  width: 85%;
+  padding: 3rem 0;
+  background-color: rgb(1, 0, 5);
+  border-radius: 50px;
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  filter: drop-shadow(0 0 10px rgba(115, 109, 207, 0.562));
+
+  gap: 5rem;
+}
+
+.cuadroCar{
+  width: 20rem;
+  height: 17rem;
+  filter: drop-shadow(0 0 7px rgb(185, 161, 218));
+  border-radius: 15px;
+  transition: all .5 ease-in-out;
+}
+.cuadroCar:active{
+  width: 19.85rem;
+  height: 16.85rem;
+  filter: drop-shadow(0 0 10px rgb(82, 115, 226));
+  transition: all .5 ease-in-out;
+}
+.astonButton{
+  background-image: url("./img/aston.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  cursor: pointer;
+}
+
+.AudiR8Button{
+  background-image: url("./img/audir.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  cursor: pointer;
+
+}
+
+.CamaroButton{
+  background-image: url("./img/camaro.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  cursor: pointer;
+
+}
+
+.FerrariButton{
+  background-image: url("./img/ferrari.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  cursor: pointer;
+
+}
+
+.LykanButton{
+  background-image: url("./img/Lykan-Hypersport1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  cursor: pointer;
+
+}
+.MercedesAmgButton{
+  background-image: url("./img/mercedesAMG2.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  cursor: pointer;
+
+}
+.PorscheGt4Button{
+  background-image: url("./img/PorscheGT4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  cursor: pointer;
+
+}
+
+.SennaButton{
+  background-image: url("./img/senna.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  cursor: pointer;
+
+}
+
 
 
 

@@ -20,18 +20,18 @@ class Car{
     }
 }
 
-const models =[];
+const Models =[];
 
-models.push(new Car(1, "Aston", "black", 40 , 30 , 30, aston ));
-models.push(new Car(2, "AudiR8", "black", 75 , 15 , 10,audiR8));
-models.push(new Car(3, "Camaro", "black", 35 , 40 , 25,camaro));
-models.push(new Car(4, "Ferrari", "black", 45 , 30 , 25,ferrari));
-models.push(new Car(5, "Lykan", "black", 50 , 30 , 20,lykan ));
-models.push(new Car(6, "MercedesAmg", "black", 65 , 25 , 10,mercedesAmg ));
-models.push(new Car(7, "PorscheGt4", "black", 70 , 10 , 20,porscheGt4 ));
-models.push(new Car(8, "Senna", "black", 55 , 35 , 10, senna ));
+Models.push(new Car(1, "Aston", "black", 40 , 30 , 30, aston ));
+Models.push(new Car(2, "AudiR8", "black", 75 , 15 , 10,audiR8));
+Models.push(new Car(3, "Camaro", "black", 35 , 40 , 25,camaro));
+Models.push(new Car(4, "Ferrari", "black", 45 , 30 , 25,ferrari));
+Models.push(new Car(5, "Lykan", "black", 50 , 30 , 20,lykan ));
+Models.push(new Car(6, "MercedesAmg", "black", 65 , 25 , 10,mercedesAmg ));
+Models.push(new Car(7, "PorscheGt4", "black", 70 , 10 , 20,porscheGt4 ));
+Models.push(new Car(8, "Senna", "black", 55 , 35 , 10, senna ));
 
 
-export default models;
+export default Models;
 
 
