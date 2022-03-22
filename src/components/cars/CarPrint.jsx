@@ -49,13 +49,13 @@ const CarsVisual = (props) =>{
                     <p>{nameState}</p>
                 </div>
                 <div className="colorCar">
-                    <p>Color: {colorState}</p>
+                    <p>Painting: {colorState}</p>
                 </div>
                 <div className="velocidadCar">
-                    <p>Velocidad: {velocidadState}</p>
+                    <p>Speed: {velocidadState}</p>
                 </div>
                 <div className="frenoCar">
-                    <p>Freno: {frenoState}</p>
+                    <p>Brake: {frenoState}</p>
                 </div>
                 <div className="driftCar">
                     <p>Drift: {driftState}</p>
