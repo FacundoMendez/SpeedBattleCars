@@ -5,9 +5,7 @@ import CarsVisual from './components/cars/CarPrint.jsx';
 import Logo from "./components/logo/Logo.jsx";
 import Video from './components/nav/Video.jsx';
 import Models from './components/cars/Cars.jsx';
-import { counter } from '@fortawesome/fontawesome-svg-core';
-
-
+import Garaje from "./components/cars/Garaje.jsx"
 console.log(...Models)
 
 
@@ -30,7 +28,8 @@ function App() {
         <div className='container2'/>
     
         <div id='models' className='container3'>
-             <CarsVisual/> /* muestra el auto de portada */
+            <Garaje />
+            <CarsVisual/> /* muestra el auto de portada */
         </div>  
 
       </main>

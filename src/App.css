@@ -238,7 +238,6 @@ main{
   background-size: cover;
   background-repeat: no-repeat;
   position: relative;
-/* coment */
 }
 
 .carImg {
@@ -265,7 +264,7 @@ main{
 /* cuadros bottones autos */
 .cuadros{
   width: 85%;
-  padding: 3rem 0;
+  padding: 2rem 0;
   background-color: rgb(1, 0, 5);
   border-radius: 50px;
   position: absolute;
@@ -277,35 +276,107 @@ main{
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-  filter: drop-shadow(0 0 10px rgba(115, 109, 207, 0.562));
-
+  filter: drop-shadow(0 0 5px rgba(115, 109, 207, 0.562));
   gap: 5rem;
 }
 
 .cuadroCar{
-  width: 20rem;
-  height: 17rem;
+  width: 15rem;
+  height: 10rem;
   filter: drop-shadow(0 0 7px rgb(185, 161, 218));
   border-radius: 15px;
-  transition: all .5 ease-in-out;
+  transition: all 1 ease-in-out;
 }
 .cuadroCar:active{
-  width: 19.85rem;
-  height: 16.85rem;
+  width: 14.85rem;
+  height: 9.85rem;
   filter: drop-shadow(0 0 10px rgb(82, 115, 226));
-  transition: all .5 ease-in-out;
+  transition: all 1 ease-in-out;
 }
+
+/* garaje */
+
+.statsCars{
+  position: relative;
+  top: 4rem;
+  left: 1%;
+  width: 42rem;
+  height: 28rem;
+  border-radius: 2px;
+  border: 2px solid blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.nameCar p {
+  padding-top: -2rem;
+  font-size: 3rem;
+  color: rgb(255, 255, 255);
+  letter-spacing: 1px;
+  font-style: italic;
+  font-weight: 700;
+  width: 100%;
+}
+
+ .colorCar p, .velocidadCar p, .frenoCar p, .driftCar p {
+  font-size: 2.3rem;
+  color: rgb(67, 86, 255);
+  letter-spacing: 1px;
+  font-weight: 700;
+  width: 100%;
+}
+
+
+/* view model */
+.containerGaraje{
+  position: relative;
+  top: 10%;
+  left: 88%;
+  width: 20rem;
+  height: 6rem;
+  border-radius: 2px;
+  border: 2px solid blue;
+}
+
+.containerGaraje a{
+  font-size: 2rem;
+  text-decoration: none;
+  width: 100%;
+  position: absolute;
+  color: rgb(67, 86, 255);
+  text-align: center;
+  top: 25%;
+  transform: translate(9, -50%);
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+
+
+
+.containerGaraje a:hover{
+  filter: drop-shadow(0 0 4px rgb(106, 106, 252));
+}
+
+/* buttons cars */
 .astonButton{
-  background-image: url("./img/aston.jpg");
-  background-size: cover;
+  background-image: url("./img/cars/aston.png");
+  background-color: black;
+  background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   cursor: pointer;
 }
 
 .AudiR8Button{
-  background-image: url("./img/audir.jpg");
-  background-size: cover;
+  background-image: url("./img/cars/audir8.png");
+  background-color: black;
+  background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   cursor: pointer;
@@ -313,8 +384,10 @@ main{
 }
 
 .CamaroButton{
-  background-image: url("./img/camaro.jpg");
-  background-size: cover;
+  background-image: url("./img/cars/camaro.png");
+  background-color: black;
+  background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   cursor: pointer;
@@ -322,8 +395,10 @@ main{
 }
 
 .FerrariButton{
-  background-image: url("./img/ferrari.jpg");
-  background-size: cover;
+  background-image: url("./img/cars/ferrari.png");
+  background-color: black;
+  background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   cursor: pointer;
@@ -331,24 +406,30 @@ main{
 }
 
 .LykanButton{
-  background-image: url("./img/Lykan-Hypersport1.jpg");
-  background-size: cover;
+  background-image: url("./img/cars/Lykan.png");
+  background-color: black;
+  background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   cursor: pointer;
 
 }
 .MercedesAmgButton{
-  background-image: url("./img/mercedesAMG2.jpeg");
-  background-size: cover;
+  background-image: url("./img/cars/mercedesAMG2.png");
+  background-color: black;
+  background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   cursor: pointer;
 
 }
 .PorscheGt4Button{
-  background-image: url("./img/PorscheGT4.jpg");
-  background-size: cover;
+  background-image: url("./img/cars/PorscheGT4.png");
+  background-color: black;
+  background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   cursor: pointer;
@@ -356,8 +437,10 @@ main{
 }
 
 .SennaButton{
-  background-image: url("./img/senna.jpg");
-  background-size: cover;
+  background-image: url("./img/cars/senna.png");
+  background-color: black;
+  background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   cursor: pointer;
