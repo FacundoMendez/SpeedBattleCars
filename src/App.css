@@ -282,14 +282,14 @@ main{
 
 .cuadroCar{
   width: 15vw;
-  height: 10rem;
+  height: 10vh;
   filter: drop-shadow(0 0 7px rgb(185, 161, 218));
   border-radius: 15px;
   transition: all 1 ease-in-out;
 }
 .cuadroCar:active{
-  width: 14.85rem;
-  height: 9.85rem;
+  width: 14.85vw;
+  height: 9.85vh;
   filter: drop-shadow(0 0 10px rgb(82, 115, 226));
   transition: all 1 ease-in-out;
 }
@@ -300,8 +300,8 @@ main{
   position: relative;
   top: 20px;
   left: 1%;
-  width: 25vw;
-  height: 46vh;
+  width: 22vw;
+  height: 45vh;
   border-radius: 2px;
   border: 3px solid rgb(0, 0, 170);
   display: flex;
@@ -314,7 +314,7 @@ main{
 
 .nameCar p {
   margin-top: -1rem;
-  font-size: 1.8vw;
+  font-size: 1.5vw;
   color: rgb(255, 255, 255);
   letter-spacing: 1px;
   font-style: italic;
@@ -323,7 +323,7 @@ main{
 }
 
  .colorCar p, .velocidadCar p, .frenoCar p, .driftCar p {
-  font-size: 1.5vw;
+  font-size: 1.2vw;
   color: rgb(67, 86, 255);
   letter-spacing: 1px;
   font-weight: 700;
@@ -460,6 +460,41 @@ main{
 
 
 @media (max-width: 1400px){
+
+  /* stats */
+  .statsCars{
+    position: relative;
+    top: 20px;
+    left: 1%;
+    width: 25vw;
+    height: 46vh;
+    border-radius: 2px;
+    border: 3px solid rgb(0, 0, 170);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    z-index: 100;
+  }
+  
+  .nameCar p {
+    margin-top: -1rem;
+    font-size: 1.8vw;
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+    font-style: italic;
+    font-weight: 700;
+    width: 100%;
+  }
+  
+   .colorCar p, .velocidadCar p, .frenoCar p, .driftCar p {
+    font-size: 1.5vw;
+    color: rgb(67, 86, 255);
+    letter-spacing: 1px;
+    font-weight: 700;
+    width: 100%;
+  }
   
 /* cuadros bottones autos */
 .cuadros{
