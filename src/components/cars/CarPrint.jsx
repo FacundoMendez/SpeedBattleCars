@@ -15,10 +15,12 @@ import Garaje from "./Garaje.jsx"
 const CarsVisual = (props) =>{
     const [carState, setCarState]= useState(senna) /* imagen del auto */
     const [nameState, setNameState]= useState("senna") /* nombre del auto */
-    const [colorState, setColorState]= useState("black") /* nombre del auto */
-    const [velocidadState, setVelocidadState]= useState("55") /* nombre del auto */
-    const [frenoState, setFrenoState]= useState("35") /* nombre del auto */
-    const [driftState, setDriftState]= useState("10") /* nombre del auto */
+    const [colorState, setColorState]= useState("black") /* color del auto */
+    const [velocidadState, setVelocidadState]= useState(55) /* velocidad del auto */
+    const [frenoState, setFrenoState]= useState(35) /* freno del auto */
+    const [driftState, setDriftState]= useState(10) /* drift del auto */
+    const [buyState, setBuyState]= useState(8) /*  id del auto */
+
 
     const updateName = (name) => {
         setNameState(name)
@@ -40,7 +42,10 @@ const CarsVisual = (props) =>{
         setDriftState(drift)
     }
 
-
+    const BuyButton = (id) => {
+        setBuyState(id)
+        console.log(id)
+    }
 
     return(
         <div>
@@ -60,6 +65,11 @@ const CarsVisual = (props) =>{
                 <div className="driftCar">
                     <p>Drift: {driftState}</p>
                 </div>
+                <div className="buyButton">
+                    <button id={buyState}>Buy</button>
+                </div>
+
+
             </div>
             <div className='carImg'>
                 <img src={carState} alt="senna" />
@@ -70,9 +80,10 @@ const CarsVisual = (props) =>{
                     setCarState(aston)
                     {updateName("Aston Martin Vulcan")};
                     {updateColor("black")};
-                    {updateVelocidad("40")};
-                    {updateFreno("30")};
-                    {updateDrift("30")};
+                    {updateVelocidad(40)};
+                    {updateFreno(30)};
+                    {updateDrift(30)};
+                    {BuyButton("1")};
                 }}>
                 </div>
 
@@ -80,9 +91,10 @@ const CarsVisual = (props) =>{
                     setCarState(audiR8);
                     {updateName("Audi R8 v10")};
                     {updateColor("black")};
-                    {updateVelocidad("75")};
-                    {updateFreno("15")};
-                    {updateDrift("10")};
+                    {updateVelocidad(75)};
+                    {updateFreno(15)};
+                    {updateDrift(10)};
+                    {BuyButton("2")};
                 }}>
                 </div>
 
@@ -90,9 +102,10 @@ const CarsVisual = (props) =>{
                     setCarState(camaro);
                     {updateName("Camaro ZL1")}
                     {updateColor("black")}
-                    {updateVelocidad("35")}
-                    {updateFreno("40")}
-                    {updateDrift("25")}
+                    {updateVelocidad(35)}
+                    {updateFreno(40)}
+                    {updateDrift(25)}
+                    {BuyButton("3")};
                 }}>
                 </div>
 
@@ -100,9 +113,10 @@ const CarsVisual = (props) =>{
                     setCarState(ferrari);
                     {updateName("LaFerrari")}
                     {updateColor("black")}
-                    {updateVelocidad("45")}
-                    {updateFreno("30")}
-                    {updateDrift("25")}
+                    {updateVelocidad(45)}
+                    {updateFreno(30)}
+                    {updateDrift(25)}
+                    {BuyButton("4")};
                 }}>
                 </div>
 
@@ -110,9 +124,10 @@ const CarsVisual = (props) =>{
                     setCarState(lykan);
                     {updateName("Lycan HyperSport")}
                     {updateColor("black")}
-                    {updateVelocidad("50")}
-                    {updateFreno("30")}
-                    {updateDrift("20")}
+                    {updateVelocidad(50)}
+                    {updateFreno(30)}
+                    {updateDrift(20)}
+                    {BuyButton("5")};
                 }}>
                 </div>
 
@@ -120,9 +135,10 @@ const CarsVisual = (props) =>{
                     setCarState(mercedesAmg);
                     {updateName("Mercedez AMG GT S")}
                     {updateColor("black")}
-                    {updateVelocidad("65")}
-                    {updateFreno("25")}
-                    {updateDrift("10")}
+                    {updateVelocidad(65)}
+                    {updateFreno(25)}
+                    {updateDrift(10)}
+                    {BuyButton("6")};
                 }}>
                 </div>
 
@@ -130,9 +146,10 @@ const CarsVisual = (props) =>{
                     setCarState(porscheGt4);
                     {updateName("Porsche 718 Cayman GT4")}
                     {updateColor("black")}
-                    {updateVelocidad("70")}
-                    {updateFreno("10")}
-                    {updateDrift("20")}
+                    {updateVelocidad(70)}
+                    {updateFreno(10)}
+                    {updateDrift(20)}
+                    {BuyButton("7")};
                 }}>
                 </div>
 
@@ -140,9 +157,10 @@ const CarsVisual = (props) =>{
                     setCarState(senna);
                     {updateName("Mclaren Senna")}
                     {updateColor("black")}
-                    {updateVelocidad("55")}
-                    {updateFreno("35")}
-                    {updateDrift("10")}
+                    {updateVelocidad(55)}
+                    {updateFreno(35)}
+                    {updateDrift(10)}
+                    {BuyButton("8")};
                 }}>
                 </div>
 

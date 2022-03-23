@@ -301,18 +301,19 @@ main{
   top: 20px;
   left: 1%;
   width: 25vw;
-  height: 42vh;
+  height: 46vh;
   border-radius: 2px;
-  border: 2px solid blue;
+  border: 3px solid rgb(0, 0, 170);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 1.5rem;
+  z-index: 100;
 }
 
 .nameCar p {
-  margin-top: -3rem;
+  margin-top: -1rem;
   font-size: 1.8vw;
   color: rgb(255, 255, 255);
   letter-spacing: 1px;
@@ -328,6 +329,18 @@ main{
   font-weight: 700;
   width: 100%;
 }
+
+/* button buy */
+
+.buyButton button{
+  font-size: 1.5vw;
+  padding: .5rem 2rem;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 255, 0.034);
+  color: rgb(67, 86, 255);
+  border-color: rgba(0, 0, 255, 0.582);
+}
+
 
 
 /* view model */
