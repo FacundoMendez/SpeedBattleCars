@@ -5,7 +5,8 @@ import CarsVisual from './components/cars/CarPrint.jsx';
 import Logo from "./components/logo/Logo.jsx";
 import Video from './components/nav/Video.jsx';
 import Models from './components/cars/Cars.jsx';
-import Garaje from "./components/cars/Garaje.jsx"
+import DataCars from './components/dataGame/DataGame.jsx';
+import Garaje from "./components/cars/Garaje.jsx";
 console.log(...Models)
 
 
@@ -25,7 +26,9 @@ function App() {
             <Logo text="Speed Battle Cars" />
           </div>  
         </div>
-        <div className='container2'/>
+        <div className='container2'>
+          <DataCars />
+        </div>
     
         <div id='models' className='container3'>
             <Garaje />

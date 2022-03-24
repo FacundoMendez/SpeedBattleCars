@@ -6,7 +6,7 @@ function Garaje(){
 
     return(
         <div className="containerGaraje">
-           <a href="#">View Model</a> 
+            <a href="#">View Model</a> 
         </div>
 
     )
